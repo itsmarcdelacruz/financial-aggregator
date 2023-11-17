@@ -21,3 +21,5 @@ __**Getting Started**__
 **Prerequisites**
 Python 3.x
 Node.js
+
+Design Mockup
