@@ -76,10 +76,10 @@ WSGI_APPLICATION = 'financesite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'budgetappdb',
-        'USER':'POSTGRES',
-        'PASSWORD': 'pass',
-        'HOST':'localhost',
+        'NAME': os.environ.get('DB_NAME'),
+        'USER':os.environ.get('DB_USER'),
+        'PASSWORD': os.environ.get('DB_USER_PASSWORD'),
+        'HOST': os.environ.get('DB_HOST'),
     }
 }
 
